@@ -40,13 +40,6 @@ export class RootComponent implements OnInit {
             })
         }
         
-         // Skip Infopage by default.
-        if (window.matchMedia('(display-mode: browser)').matches) {
-            this.router.navigate(['app'], {
-                replaceUrl: true
-            })
-        }
-
         if (isFirstTime) {
             this.notificationService.showSnackBarMessage('MESSAGES.WELCOME_MESSAGE')
         }
