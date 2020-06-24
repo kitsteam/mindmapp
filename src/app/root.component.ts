@@ -35,7 +35,7 @@ export class RootComponent implements OnInit {
 
         // If there is a PWA environment go to application page as default.
         if (window.matchMedia('(display-mode: standalone)').matches) {
-            this.router.navigate(['app'], {
+            this.router.navigate([''], {
                 replaceUrl: true
             })
         }
